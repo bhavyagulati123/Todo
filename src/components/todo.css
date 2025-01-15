@@ -1,0 +1,120 @@
+.sahil {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.todo_sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.add {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add input {
+    width: 95   %;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.add input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.add button {
+    width: fit-content;
+    padding: 8px 20px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.add button:hover {
+    background: #0056b3;
+}
+
+.display_cont {
+    overflow-y: auto;
+    max-height: 60vh;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #d3d3d3 transparent;
+}
+
+.display_cont::-webkit-scrollbar {
+    width: 6px;
+}
+
+.display_cont::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+.display {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.display:last-child {
+    border-bottom: none;
+}
+
+.display div.text {
+    font-size: 16px;
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+.display input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.button .btn {
+    background: none;
+    border: none;
+    color: #495057;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button .btn:hover {
+    color: #dc3545; /* Red for Delete */
+}
+
+.button .btn:first-child:hover {
+    color: #007bff; /* Blue for Edit */
+}

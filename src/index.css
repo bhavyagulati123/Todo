@@ -1,0 +1,15 @@
+.btn{
+    background-color:#112D4E ;
+    color: #F9F7F7;
+    padding: 3px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    &:active{
+        background-color:#F9F7F7;
+        color: #112D4E ;
+
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

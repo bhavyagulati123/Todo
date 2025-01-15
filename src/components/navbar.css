@@ -1,0 +1,30 @@
+.Nav_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112D4E;
+    color: #DBE2EF;
+    padding: 8px;
+    
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 4px;
+}
+
+li {
+    padding: 12px;
+    &:hover{
+        background-color: #F9F7F7;
+        color: #112D4E;
+        border-radius: 10px;
+        /* font-size: 17px; */
+       
+    }
+}
